@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for comleting </title>
+</head>
+<body>
+          
+	<p>Thank you for completing the survey!</p>
+
+	<script>
+		const targetWindow = window.parent;
+		if (targetWindow) {
+			targetWindow.postMessage("Survey.Completed", "*");
+		}
+	</script>
+</body>
+</html>
